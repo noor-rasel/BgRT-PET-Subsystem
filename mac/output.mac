@@ -1,0 +1,26 @@
+# Global Stat
+
+/gate/actor/addActor               SimulationStatisticActor stat
+/gate/actor/stat/save              output/stat_440.txt
+
+
+
+# Define root listmode file output
+
+/gate/output/root/enable
+/gate/output/root/setFileName             output/pet_440
+/gate/output/root/setRootHitFlag          0
+/gate/output/root/setRootSinglesFlag      0
+/gate/output/root/setRootCoincidencesFlag 1
+/gate/output/root/setRootdelayFlag        1
+/gate/output/root/setRootNtupleFlag       0
+
+# Summary
+
+/gate/output/summary/enable
+/gate/output/summary/setFileName output/summary_440.txt
+/gate/output/summary/addCollection Coincidences
+/gate/output/summary/addCollection Delay
+
+
+
