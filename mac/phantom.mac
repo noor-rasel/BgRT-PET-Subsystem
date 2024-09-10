@@ -1,0 +1,55 @@
+# Define NEMA NU2 2018 Scatter Phantom
+/gate/world/daughters/name               phantom
+/gate/world/daughters/insert             cylinder
+/gate/phantom/placement/setTranslation   0.0 0.0 0.0 cm
+/gate/phantom/geometry/setRmin     0.0 cm
+/gate/phantom/geometry/setRmax     10.0 cm
+/gate/phantom/geometry/setHeight   70. cm
+/gate/phantom/setMaterial          Polyethylene
+/gate/phantom/vis/forceWireframe
+/gate/phantom/vis/setColor         red
+/gate/phantom/vis/setVisible       1
+
+# Define hole of 6.4 mm diameter
+/gate/phantom/daughters/name         hole
+/gate/phantom/daughters/insert       cylinder
+/gate/hole/placement/setTranslation  0.0 -4.5 0.0 cm
+/gate/hole/geometry/setRmin     0.0 mm
+/gate/hole/geometry/setRmax     3.2 mm
+/gate/hole/geometry/setHeight   70. cm
+/gate/hole/setMaterial          Air
+/gate/hole/vis/forceWireframe
+/gate/hole/vis/setColor         blue
+/gate/hole/vis/setVisible       1
+
+# Define linear Source Exterior_ Polyethylene Tube
+/gate/hole/daughters/name         linearSourceOut
+/gate/hole/daughters/insert       cylinder
+/gate/linearSourceOut/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/linearSourceOut/geometry/setRmin     1.6 mm
+/gate/linearSourceOut/geometry/setRmax     2.4 mm
+/gate/linearSourceOut/geometry/setHeight   70. cm
+/gate/linearSourceOut/setMaterial          Polyethylene
+/gate/linearSourceOut/vis/forceWireframe
+/gate/linearSourceOut/vis/setColor         yellow
+/gate/linearSourceOut/vis/setVisible       1
+
+# Define linear source interior
+/gate/hole/daughters/name         linearSourceIn
+/gate/hole/daughters/insert       cylinder
+/gate/linearSourceIn/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/linearSourceIn/geometry/setRmin     0.0 mm
+/gate/linearSourceIn/geometry/setRmax     1.6 mm
+/gate/linearSourceIn/geometry/setHeight   70. cm
+/gate/linearSourceIn/setMaterial          Water
+/gate/linearSourceIn/vis/forceWireframe
+/gate/linearSourceIn/vis/setColor         green
+/gate/linearSourceIn/vis/setVisible       1
+
+# Define the sensitive detector
+/gate/phantom/attachPhantomSD
+/gate/hole/attachPhantomSD
+/gate/linearSourceIn/attachPhantomSD
+/gate/linearSourceOut/attachPhantomSD
+~                                                                                                                     
+~                               
