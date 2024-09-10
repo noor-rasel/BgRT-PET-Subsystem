@@ -1,0 +1,69 @@
+# Singles
+
+# Adder
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert                        adder
+
+# Readout
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert                        readout
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/readout/setDepth              4
+
+# Energy Resolution
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert                        energyResolution
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyResolution/fwhm        0.117
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyResolution/energyOfReference 511. keV
+
+# Time Resolution
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert timeResolution
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/timeResolution/fwhm 220.0 ps
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/timeResolution/verbose 0
+
+# Energy Framing/ Energy window
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert                        energyFraming
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyFraming/setMin      395. keV
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyFraming/setMax            600. keV
+
+# PILES-UP
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert pileup
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/pileup/setDepth 1
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/pileup/setPileup 5.9 ns
+
+
+# DEADTIME
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/insert deadtime
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/deadtime/setDeadTime 5.9 ns
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/deadtime/setMode paralysable
+#/gate/digitizerMgr/crystal/SinglesDigitizer/Singles/deadtime/chooseDTVolume module
+
+# Coincidence sorter
+
+# Prompt coincidence
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setInputCollection Singles
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setWindow          4.5 ns
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setDepth 4
+# /gate/digitizerMgr/CoincidenceSorter/Coincidences/minSectorDifference 5
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/MultiplesPolicy    takeAllGoods
+
+# Delayed coincidence
+/gate/digitizerMgr/name                            delay
+/gate/digitizerMgr/insert                          CoincidenceSorter
+/gate/digitizerMgr/CoincidenceSorter/delay/setInputCollection Singles
+/gate/digitizerMgr/CoincidenceSorter/delay/setWindow                 4.5 ns
+/gate/digitizerMgr/CoincidenceSorter/delay/setOffset                 100. ns
+/gate/digitizerMgr/CoincidenceSorter/delay/setDepth 4
+#/gate/digitizerMgr/CoincidenceSorter/delay/minSectorDifference 5
+/gate/digitizerMgr/CoincidenceSorter/delay/MultiplesPolicy          takeAllGoods
+
+# Final coincidence: Prompts plus Delays
+#/gate/digitizerMgr/name finalCoinc
+#/gate/digitizerMgr/insert CoincidenceDigitizer
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/addInputCollection delay
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/addInputCollection Coincidences
+# #/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/usePriority false
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/describe
+
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/insert buffer
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/buffer/setBufferSize 64 B
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/buffer/setReadFrequency 0.1 MHz
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/buffer/setMode 0
+#/gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/buffer/describe
+
