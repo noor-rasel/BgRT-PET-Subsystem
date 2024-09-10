@@ -1,0 +1,107 @@
+# World
+/gate/world/geometry/setXLength 300. cm
+/gate/world/geometry/setYLength 300. cm
+/gate/world/geometry/setZLength 300. cm
+/gate/world/vis/setColor white
+/gate/world/vis/forceWireframe
+/gate/world/setMaterial Air
+/gate/world/vis/setVisible 0
+
+####################
+####  BgRT PET ARCS Using System PETScanner
+#######################
+/gate/world/daughters/name BgPET
+/gate/world/daughters/systemType PETscanner
+/gate/world/daughters/insert cylinder
+/gate/BgPET/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/BgPET/geometry/setRmin    50.0 cm
+/gate/BgPET/geometry/setRmax    60.0 cm
+/gate/BgPET/geometry/setHeight  6.5 cm
+/gate/BgPET/setMaterial Air
+/gate/BgPET/vis/setVisible 0
+
+#      PET ARC
+/gate/world/daughters/name arc1
+/gate/world/daughters/insert cylinder
+/gate/arc1/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/arc1/geometry/setRmin    50.5 cm
+/gate/arc1/geometry/setRmax    59.5 cm
+/gate/arc1/geometry/setHeight  6.5 cm
+/gate/arc1/geometry/setPhiStart -45 deg
+/gate/arc1/geometry/setDeltaPhi 90 deg
+/gate/arc1/setMaterial Air
+/gate/arc1/vis/setVisible 0
+
+#       DETECTOR MODULE
+/gate/arc1/daughters/name module
+/gate/arc1/daughters/insert box
+/gate/module/placement/setTranslation 54.2 0.0 0.0 cm
+/gate/module/geometry/setXLength  2.0 cm
+/gate/module/geometry/setYLength  4.968 cm
+/gate/module/geometry/setZLength  5.2 cm
+/gate/module/setMaterial Air
+/gate/module/vis/setVisible 0
+
+
+#       DETECTOR BLOCK
+/gate/module/daughters/name block
+/gate/module/daughters/insert box
+/gate/block/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/block/geometry/setXLength 2.0 cm
+/gate/block/geometry/setYLength 4.968 cm
+/gate/block/geometry/setZLength 2.484 cm
+/gate/block/setMaterial Air
+/gate/block/vis/setVisible 0
+
+
+#       LSO CRYSTAL
+/gate/block/daughters/name LSO
+/gate/block/daughters/insert box
+/gate/LSO/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/LSO/geometry/setXLength  20 mm
+/gate/LSO/geometry/setYLength 4.14 mm
+/gate/LSO/geometry/setZLength 4.14 mm
+/gate/LSO/setMaterial LSO
+/gate/LSO/vis/setColor green
+
+#       REPEAT LSO CRYSTAL
+/gate/LSO/repeaters/insert cubicArray
+/gate/LSO/cubicArray/setRepeatNumberX 1
+/gate/LSO/cubicArray/setRepeatNumberY 12
+/gate/LSO/cubicArray/setRepeatNumberZ 6
+/gate/LSO/cubicArray/setRepeatVector 0 4.14 4.14 mm
+
+
+#       REPEAT DETECTOR BLOCK
+/gate/block/repeaters/insert          linear
+/gate/block/linear/setRepeatNumber    2
+/gate/block/linear/setRepeatVector    0. 0. 2.716 cm
+
+
+
+#       REPEAT DETECTOR MODULE
+/gate/module/repeaters/insert ring
+/gate/module/ring/setRepeatNumber 16
+/gate/module/ring/setPoint1 0. 0. 1. mm
+/gate/module/ring/setPoint2 0. 0. 0. mm
+/gate/module/ring/setFirstAngle -45 deg
+/gate/module/ring/setAngularSpan 90 deg
+/gate/module/ring/enableAutoRotation
+
+#       REPEAT PET ARC
+/gate/arc1/repeaters/insert ring
+/gate/arc1/ring/setRepeatNumber 2
+/gate/arc1/ring/setPoint1 0. 0. 1. mm
+/gate/arc1/ring/setPoint2 0. 0. 0. mm
+/gate/arc1/ring/enableAutoRotation
+
+
+#     ATTACH SYSTEMS
+/gate/systems/BgPET/level1/attach arc1
+/gate/systems/BgPET/level2/attach module
+/gate/systems/BgPET/level3/attach block
+/gate/systems/BgPET/level4/attach LSO
+
+
+#       ATTACH CRYSTAL SD
+/gate/LSO/attachCrystalSD
