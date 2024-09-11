@@ -16,7 +16,7 @@
 /gate/hole/placement/setTranslation  0.0 -4.5 0.0 cm
 /gate/hole/geometry/setRmin     0.0 mm
 /gate/hole/geometry/setRmax     3.2 mm
-/gate/hole/geometry/setHeight   70. cm
+/gate/hole/geometry/setHeight   70 cm
 /gate/hole/setMaterial          Air
 /gate/hole/vis/forceWireframe
 /gate/hole/vis/setColor         blue
@@ -28,7 +28,7 @@
 /gate/linearSourceOut/placement/setTranslation 0.0 0.0 0.0 cm
 /gate/linearSourceOut/geometry/setRmin     1.6 mm
 /gate/linearSourceOut/geometry/setRmax     2.4 mm
-/gate/linearSourceOut/geometry/setHeight   70. cm
+/gate/linearSourceOut/geometry/setHeight   70 cm
 /gate/linearSourceOut/setMaterial          Polyethylene
 /gate/linearSourceOut/vis/forceWireframe
 /gate/linearSourceOut/vis/setColor         yellow
@@ -40,7 +40,7 @@
 /gate/linearSourceIn/placement/setTranslation 0.0 0.0 0.0 cm
 /gate/linearSourceIn/geometry/setRmin     0.0 mm
 /gate/linearSourceIn/geometry/setRmax     1.6 mm
-/gate/linearSourceIn/geometry/setHeight   70. cm
+/gate/linearSourceIn/geometry/setHeight   70 cm
 /gate/linearSourceIn/setMaterial          Water
 /gate/linearSourceIn/vis/forceWireframe
 /gate/linearSourceIn/vis/setColor         green
