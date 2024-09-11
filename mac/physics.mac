@@ -1,9 +1,9 @@
 /gate/physics/addPhysicsList emstandard_opt3
 
 # High cut by default
-/gate/physics/Gamma/SetCutInRegion      world 1 m
-/gate/physics/Electron/SetCutInRegion   world 1 m
-/gate/physics/Positron/SetCutInRegion   world 1 m
+/gate/physics/Gamma/SetCutInRegion      world 1.0 cm
+/gate/physics/Electron/SetCutInRegion   world 1.0 cm
+/gate/physics/Positron/SetCutInRegion   world 1.0 cm
 
 # Cuts for particle in NEMACylinder
 /gate/physics/Gamma/SetCutInRegion      phantom 1.0 mm
