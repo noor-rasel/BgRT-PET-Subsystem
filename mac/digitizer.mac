@@ -48,7 +48,7 @@
 /gate/digitizerMgr/insert                          CoincidenceSorter
 /gate/digitizerMgr/CoincidenceSorter/delay/setInputCollection Singles
 /gate/digitizerMgr/CoincidenceSorter/delay/setWindow                 4.5 ns
-/gate/digitizerMgr/CoincidenceSorter/delay/setOffset                 100. ns
+/gate/digitizerMgr/CoincidenceSorter/delay/setOffset                 100.0 ns
 /gate/digitizerMgr/CoincidenceSorter/delay/setDepth 4
 #/gate/digitizerMgr/CoincidenceSorter/delay/minSectorDifference 5
 /gate/digitizerMgr/CoincidenceSorter/delay/MultiplesPolicy          takeAllGoods
