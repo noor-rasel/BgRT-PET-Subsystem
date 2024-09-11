@@ -1,7 +1,7 @@
 # World
-/gate/world/geometry/setXLength 300. cm
-/gate/world/geometry/setYLength 300. cm
-/gate/world/geometry/setZLength 300. cm
+/gate/world/geometry/setXLength 1.5 m
+/gate/world/geometry/setYLength 1.5 m
+/gate/world/geometry/setZLength 1.5 m
 /gate/world/vis/setColor white
 /gate/world/vis/forceWireframe
 /gate/world/setMaterial Air
@@ -58,7 +58,7 @@
 /gate/block/daughters/name LSO
 /gate/block/daughters/insert box
 /gate/LSO/placement/setTranslation 0.0 0.0 0.0 cm
-/gate/LSO/geometry/setXLength  20 mm
+/gate/LSO/geometry/setXLength  20.0 mm
 /gate/LSO/geometry/setYLength 4.14 mm
 /gate/LSO/geometry/setZLength 4.14 mm
 /gate/LSO/setMaterial LSO
@@ -69,13 +69,13 @@
 /gate/LSO/cubicArray/setRepeatNumberX 1
 /gate/LSO/cubicArray/setRepeatNumberY 12
 /gate/LSO/cubicArray/setRepeatNumberZ 6
-/gate/LSO/cubicArray/setRepeatVector 0 4.14 4.14 mm
+/gate/LSO/cubicArray/setRepeatVector 0.0 4.14 4.14 mm
 
 
 #       REPEAT DETECTOR BLOCK
 /gate/block/repeaters/insert          linear
 /gate/block/linear/setRepeatNumber    2
-/gate/block/linear/setRepeatVector    0. 0. 2.716 cm
+/gate/block/linear/setRepeatVector    0.0 0.0 2.716 cm
 
 
 
