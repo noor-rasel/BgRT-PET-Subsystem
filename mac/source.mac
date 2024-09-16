@@ -3,19 +3,17 @@
 #/gate/source/addSource                 f18
 #/gate/source/f18/gps/particle          e+
 #/gate/source/f18/gps/energytype        Fluor18
-#/gate/source/f18/setActivity           1000 becquerel
+#/gate/source/f18/setActivity           1787.914158 MBq
 #/gate/source/f18/setForcedUnstableFlag true
-#/gate/source/f18/setForcedHalfLife     6586.2 s
+#/gate/source/f18/setForcedHalfLife     6586.0 s
 #/gate/source/f18/gps/angtype           iso
 
 #/gate/source/f18/gps/shape             Cylinder
-#/gate/source/f18/gps/radius    0.5 mm
-#/gate/source/f18/gps/halfz             0.5 mm
+#/gate/source/f18/gps/radius    1.6 mm
+#/gate/source/f18/gps/halfz             35 mm
 #/gate/source/f18/gps/angtype   iso
-#/gate/source/f18/gps/centre    0. 0. 0. cm
-#/gate/source/f18/gps/centre    5. 5. 0. cm
-
-# /gate/source/f18/visualize            cyan
+#/gate/source/f18/gps/centre    0.0 -4.5 0.0 cm
+# /gate/source/f18/visualize            green
 
 
 # ---------------------------------------
