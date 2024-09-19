@@ -20,8 +20,8 @@
 /gate/PETscanner/vis/setVisible 0
 
 #      PET ARC
-/gate/world/daughters/name arc
-/gate/world/daughters/insert cylinder
+/gate/PETscanner/daughters/name arc
+/gate/PETscanner/daughters/insert cylinder
 /gate/arc/placement/setTranslation 0.0 0.0 0.0 cm
 /gate/arc/geometry/setRmin    50.5 cm
 /gate/arc/geometry/setRmax    59.5 cm
