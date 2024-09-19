@@ -39,7 +39,6 @@
 # Source
 ##########################################################
 /control/execute mac/source.mac
-#/control/execute mac/sources.mac
 
 # Random
 /gate/random/setEngineName MersenneTwister
