@@ -1,1 +1,45 @@
+# Define NEMA NU2 2018 Sensitivity Phantom
+
+# Define Line Source
+/gate/world/daughters/name               phantom
+/gate/world/daughters/insert             cylinder
+/gate/phantom/placement/setTranslation   0.0 0.0 0.0 cm
+/gate/phantom/geometry/setRmin     0.0 cm
+/gate/phantom/geometry/setRmax     5.7 mm
+/gate/phantom/geometry/setHeight   70.0 cm
+/gate/phantom/setMaterial          Water
+/gate/phantom/vis/forceWireframe
+/gate/phantom/vis/setColor         red
+/gate/phantom/vis/setVisible       1
+
+# Define Polyethylene phantom
+/gate/phantom/daughters/name plastic
+/gate/phantom/daughters/insert cylinder
+/gate/plastic/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/plastic/geometry/setRmin 2.0 mm
+/gate/plastic/geometry/setRmax 3.2 mm
+/gate/plastic/geometry/setHeight   70.0 cm
+/gate/plastic/setMaterial          Polyethylene
+/gate/plastic/vis/forceWireframe
+/gate/plastic/vis/setColor         blue
+/gate/plastic/vis/setVisible       1
+
+# Define Aluminum Sleeve 01
+/gate/phantom/daughters/name layer1
+/gate/phantom/daughters/insert cylinder
+/gate/layer1/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/layer1/geometry/setRmin 3.2 mm
+/gate/layer1/geometry/setRmax 5.7 mm
+/gate/layer1/geometry/setHeight   70.0 cm
+/gate/layer1/setMaterial          Aluminium
+/gate/layer1/vis/forceWireframe
+/gate/layer1/vis/setColor         green
+/gate/layer1/vis/setVisible       1
+
+# Define the sensitive detector
+/gate/phantom/attachPhantomSD
+/gate/plastic/attachPhantomSD
+/gate/layer1/attachPhantomSD
+
+
 
