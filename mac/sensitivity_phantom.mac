@@ -1,23 +1,33 @@
 # Define NEMA NU2 2018 Sensitivity Phantom
-
-# Define Line Source
 /gate/world/daughters/name               phantom
 /gate/world/daughters/insert             cylinder
 /gate/phantom/placement/setTranslation   0.0 0.0 0.0 cm
 /gate/phantom/geometry/setRmin     0.0 cm
-/gate/phantom/geometry/setRmax     5.7 mm
+/gate/phantom/geometry/setRmax     3.2 mm
 /gate/phantom/geometry/setHeight   70.0 cm
-/gate/phantom/setMaterial          Water
+/gate/phantom/setMaterial          Air
 /gate/phantom/vis/forceWireframe
 /gate/phantom/vis/setColor         red
 /gate/phantom/vis/setVisible       1
+
+# Define line source
+/gate/phantom/daughters/name lines
+/gate/phantom/daughters/insert cylinder
+/gate/lines/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/lines/geometry/setRmin 0.0 mm
+/gate/lines/geometry/setRmax 1.0 mm
+/gate/lines/geometry/setHeight   70.0 cm
+/gate/lines/setMaterial          Water
+/gate/lines/vis/forceWireframe
+/gate/lines/vis/setColor         yellow
+/gate/lines/vis/setVisible       1
 
 # Define Polyethylene phantom
 /gate/phantom/daughters/name plastic
 /gate/phantom/daughters/insert cylinder
 /gate/plastic/placement/setTranslation 0.0 0.0 0.0 cm
-/gate/plastic/geometry/setRmin 2.0 mm
-/gate/plastic/geometry/setRmax 3.2 mm
+/gate/plastic/geometry/setRmin 1.0 mm
+/gate/plastic/geometry/setRmax 1.6 mm
 /gate/plastic/geometry/setHeight   70.0 cm
 /gate/plastic/setMaterial          Polyethylene
 /gate/plastic/vis/forceWireframe
@@ -28,8 +38,8 @@
 /gate/phantom/daughters/name layer1
 /gate/phantom/daughters/insert cylinder
 /gate/layer1/placement/setTranslation 0.0 0.0 0.0 cm
-/gate/layer1/geometry/setRmin 3.2 mm
-/gate/layer1/geometry/setRmax 5.7 mm
+/gate/layer1/geometry/setRmin 1.95 mm
+/gate/layer1/geometry/setRmax 3.2 mm
 /gate/layer1/geometry/setHeight   70.0 cm
 /gate/layer1/setMaterial          Aluminium
 /gate/layer1/vis/forceWireframe
@@ -40,16 +50,17 @@
 #/gate/phantom/daughters/name layer2
 #/gate/phantom/daughters/insert cylinder
 #/gate/layer2/placement/setTranslation 0.0 0.0 0.0 cm
-#/gate/layer2/geometry/setRmin 5.7 mm
-#/gate/layer2/geometry/setRmax 8.2 mm
+#/gate/layer2/geometry/setRmin 3.5 mm
+#/gate/layer2/geometry/setRmax 4.75 mm
 #/gate/layer2/geometry/setHeight   70.0 cm
 #/gate/layer2/setMaterial          Aluminium
 #/gate/layer2/vis/forceWireframe
-#/gate/layer2/vis/setColor         green
+#/gate/layer2/vis/setColor         red
 #/gate/layer2/vis/setVisible       1
 
 # Define the sensitive detector
 /gate/phantom/attachPhantomSD
+/gate/lines/attachPhantomSD
 /gate/plastic/attachPhantomSD
 /gate/layer1/attachPhantomSD
 #/gate/layer2/attachPhantomSD
