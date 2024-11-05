@@ -8,7 +8,7 @@
 /gate/world/vis/setVisible 0
 
 ####################
-####  BgRT PET Full ARCS Using System PETScanner
+####  BgRT PET Full ARCS (04- cover 360 degree) Using System PETScanner
 #######################
 /gate/world/daughters/name PETscanner
 /gate/world/daughters/insert cylinder
