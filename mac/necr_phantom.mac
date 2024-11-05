@@ -22,18 +22,6 @@
 /gate/hole/vis/setColor         blue
 /gate/hole/vis/setVisible       1
 
-# Define linear Source Exterior_ Polyethylene Tube
-/gate/hole/daughters/name         linearSourceOut
-/gate/hole/daughters/insert       cylinder
-/gate/linearSourceOut/placement/setTranslation 0.0 0.0 0.0 cm
-/gate/linearSourceOut/geometry/setRmin     1.6 mm
-/gate/linearSourceOut/geometry/setRmax     2.4 mm
-/gate/linearSourceOut/geometry/setHeight   70 cm
-/gate/linearSourceOut/setMaterial          Polyethylene
-/gate/linearSourceOut/vis/forceWireframe
-/gate/linearSourceOut/vis/setColor         yellow
-/gate/linearSourceOut/vis/setVisible       1
-
 # Define linear source interior
 /gate/hole/daughters/name         linearSourceIn
 /gate/hole/daughters/insert       cylinder
@@ -45,6 +33,18 @@
 /gate/linearSourceIn/vis/forceWireframe
 /gate/linearSourceIn/vis/setColor         green
 /gate/linearSourceIn/vis/setVisible       1
+
+# Define linear Source Exterior_ Polyethylene Tube
+/gate/hole/daughters/name         linearSourceOut
+/gate/hole/daughters/insert       cylinder
+/gate/linearSourceOut/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/linearSourceOut/geometry/setRmin     1.6 mm
+/gate/linearSourceOut/geometry/setRmax     2.4 mm
+/gate/linearSourceOut/geometry/setHeight   70 cm
+/gate/linearSourceOut/setMaterial          Polyethylene
+/gate/linearSourceOut/vis/forceWireframe
+/gate/linearSourceOut/vis/setColor         yellow
+/gate/linearSourceOut/vis/setVisible       1
 
 # Define the sensitive detector
 /gate/phantom/attachPhantomSD
