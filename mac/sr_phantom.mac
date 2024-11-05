@@ -1,74 +1,75 @@
 # Define six spherical point source phantoms to obtain spatial resolution
 
 # Spherical point source-1
-/gate/world/daughters/name               phantom1
+/gate/world/daughters/name               sphere1
 /gate/world/daughters/insert             sphere
-/gate/phantom1/placement/setTranslation   0.0 1.0 0.0 cm
-/gate/phantom1/geometry/setRmin     0.0 mm
-/gate/phantom1/geometry/setRmax     0.5 mm
-/gate/phantom1/setMaterial          Water
-/gate/phantom1/vis/forceWireframe
-/gate/phantom1/vis/setColor         red
-/gate/phantom1/vis/setVisible       1
+/gate/sphere1/placement/setTranslation   0.0 1.0 0.0 cm
+/gate/sphere1/geometry/setRmin     0.0 mm
+/gate/sphere1/geometry/setRmax     0.25 mm
+/gate/sphere1/setMaterial          Water
+/gate/sphere1/vis/forceWireframe
+/gate/sphere1/vis/setColor         red
+/gate/sphere1/vis/setVisible       1
 
 # Spherical point source-2
-/gate/world/daughters/name               phantom2
+/gate/world/daughters/name               sphere2
 /gate/world/daughters/insert             sphere
-/gate/phantom2/placement/setTranslation   0.0 10.0 0.0 cm
-/gate/phantom2/geometry/setRmin     0.0 mm
-/gate/phantom2/geometry/setRmax     0.5 mm
-/gate/phantom2/setMaterial          Water
-/gate/phantom2/vis/forceWireframe
-/gate/phantom2/vis/setColor         red
-/gate/phantom2/vis/setVisible       1
+/gate/sphere2/placement/setTranslation   0.0 10.0 0.0 cm
+/gate/sphere2/geometry/setRmin     0.0 mm
+/gate/sphere2/geometry/setRmax     0.25 mm
+/gate/sphere2/setMaterial          Water
+/gate/sphere2/vis/forceWireframe
+/gate/sphere2/vis/setColor         red
+/gate/sphere2/vis/setVisible       1
 
 # Spherical point source-3
-/gate/world/daughters/name               phantom3
+/gate/world/daughters/name               sphere3
 /gate/world/daughters/insert             sphere
-/gate/phantom3/placement/setTranslation   0.0 20.0 0.0 cm
-/gate/phantom3/geometry/setRmin     0.0 mm
-/gate/phantom3/geometry/setRmax     0.5 mm
-/gate/phantom3/setMaterial          Water
-/gate/phantom3/vis/forceWireframe
-/gate/phantom3/vis/setColor         red
-/gate/phantom3/vis/setVisible       1
+/gate/sphere3/placement/setTranslation   0.0 20.0 0.0 cm
+/gate/sphere3/geometry/setRmin     0.0 mm
+/gate/sphere3/geometry/setRmax     0.25 mm
+/gate/sphere3/setMaterial          Water
+/gate/sphere3/vis/forceWireframe
+/gate/sphere3/vis/setColor         red
+/gate/sphere3/vis/setVisible       1
 
 # Spherical point source-4
-/gate/world/daughters/name               phantom4
+/gate/world/daughters/name               sphere4
 /gate/world/daughters/insert             sphere
-/gate/phantom4/placement/setTranslation   0.0 1.0 0.65 cm
-/gate/phantom4/geometry/setRmin     0.0 mm
-/gate/phantom4/geometry/setRmax     0.5 mm
-/gate/phantom4/setMaterial          Water
-/gate/phantom4/vis/forceWireframe
-/gate/phantom4/vis/setColor         red
-/gate/phantom4/vis/setVisible       1
+/gate/sphere4/placement/setTranslation   0.0 -1.0 1.95 cm
+/gate/sphere4/geometry/setRmin     0.0 mm
+/gate/sphere4/geometry/setRmax     0.25 mm
+/gate/sphere4/setMaterial          Water
+/gate/sphere4/vis/forceWireframe
+/gate/sphere4/vis/setColor         red
+/gate/sphere4/vis/setVisible       1
 
 # Spherical point source-5
-/gate/world/daughters/name               phantom5
+/gate/world/daughters/name               sphere5
 /gate/world/daughters/insert             sphere
-/gate/phantom5/placement/setTranslation   0.0 10.0 0.65 cm
-/gate/phantom5/geometry/setRmin     0.0 mm
-/gate/phantom5/geometry/setRmax     0.5 mm
-/gate/phantom5/setMaterial          Water
-/gate/phantom5/vis/forceWireframe
-/gate/phantom5/vis/setColor         red
-/gate/phantom5/vis/setVisible       1
+/gate/sphere5/placement/setTranslation   0.0 -10.0 1.95 cm
+/gate/sphere5/geometry/setRmin     0.0 mm
+/gate/sphere5/geometry/setRmax     0.25 mm
+/gate/sphere5/setMaterial          Water
+/gate/sphere5/vis/forceWireframe
+/gate/sphere5/vis/setColor         red
+/gate/sphere5/vis/setVisible       1
 
 # Spherical point source-6
-/gate/world/daughters/name               phantom6
+/gate/world/daughters/name               sphere6
 /gate/world/daughters/insert             sphere
-/gate/phantom6/placement/setTranslation   0.0 20.0 0.65 cm
-/gate/phantom6/geometry/setRmin     0.0 mm
-/gate/phantom6/geometry/setRmax     0.5 mm
-/gate/phantom6/setMaterial          Water
-/gate/phantom6/vis/forceWireframe
-/gate/phantom6/vis/setColor         red
-/gate/phantom6/vis/setVisible       1
+/gate/sphere6/placement/setTranslation   0.0 -20.0 1.95 cm
+/gate/sphere6/geometry/setRmin     0.0 mm
+/gate/sphere6/geometry/setRmax     0.25 mm
+/gate/sphere6/setMaterial          Water
+/gate/sphere6/vis/forceWireframe
+/gate/sphere6/vis/setColor         red
+/gate/sphere6/vis/setVisible       1
 
-/gate/phantom1/attachPhantomSD
-/gate/phantom2/attachPhantomSD
-/gate/phantom3/attachPhantomSD
-/gate/phantom4/attachPhantomSD
-/gate/phantom5/attachPhantomSD
-/gate/phantom6/attachPhantomSD
+# Attach Phantom Sensitive Detector
+/gate/sphere1/attachPhantomSD
+/gate/sphere2/attachPhantomSD
+/gate/sphere3/attachPhantomSD
+/gate/sphere4/attachPhantomSD
+/gate/sphere5/attachPhantomSD
+/gate/sphere6/attachPhantomSD
