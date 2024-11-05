@@ -100,7 +100,7 @@
 /gate/source/source4/gps/monoenergy 0.511 MeV
 /gate/source/source4/gps/type Volume
 /gate/source/source4/gps/shape         Sphere
-/gate/source/source4/gps/centre        0.0 -1.0 0.0 cm
+/gate/source/source4/gps/centre        0.0 -1.0 1.95 cm
 /gate/source/source4/gps/radius        0.25 mm
 /gate/source/source4/visualize  green
 
@@ -114,7 +114,7 @@
 /gate/source/source5/gps/monoenergy 0.511 MeV
 /gate/source/source5/gps/type Volume
 /gate/source/source5/gps/shape         Sphere
-/gate/source/source5/gps/centre        0.0 -10.0 0.0 cm
+/gate/source/source5/gps/centre        0.0 -10.0 1.95 cm
 /gate/source/source5/gps/radius        0.25 mm
 /gate/source/source5/visualize  green
 
@@ -128,6 +128,6 @@
 /gate/source/source6/gps/monoenergy 0.511 MeV
 /gate/source/source6/gps/type Volume
 /gate/source/source6/gps/shape         Sphere
-/gate/source/source6/gps/centre        0.0 -20.0 0.0 cm
+/gate/source/source6/gps/centre        0.0 -20.0 1.95 cm
 /gate/source/source6/gps/radius        0.25 mm
 /gate/source/source6/visualize  green
