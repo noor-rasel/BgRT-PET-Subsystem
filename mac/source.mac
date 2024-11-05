@@ -43,3 +43,27 @@
 /gate/source/twogamma/visualize  green
 # source activities are (MBq): 44, 88, 110
 # 154, 198, 220, 264, 308, 330, 352, 374, 396, 440
+
+# Source for Sensitivity Calculation 
+/gate/source/addSource twogamma
+/gate/source/twogamma/setActivity 4.0 MBq
+/gate/source/twogamma/setForcedUnstableFlag true
+/gate/source/twogamma/setForcedHalfLife 6586.0 s
+/gate/source/twogamma/setType backtoback
+/gate/source/twogamma/gps/particle gamma
+/gate/source/twogamma/gps/energytype Mono
+/gate/source/twogamma/gps/monoenergy 0.511 MeV
+
+/gate/source/twogamma/gps/type Volume
+/gate/source/twogamma/gps/shape         Cylinder
+/gate/source/twogamma/gps/centre        0.0 0.0 0.0 cm
+/gate/source/twogamma/gps/radius        1.0 mm
+/gate/source/twogamma/gps/halfz         35 cm
+
+/gate/source/twogamma/gps/angtype       iso
+/gate/source/twogamma/gps/mintheta 90. deg
+/gate/source/twogamma/gps/maxtheta 90. deg
+/gate/source/twogamma/gps/minphi 0. deg
+/gate/source/twogamma/gps/maxphi 360. deg
+
+/gate/source/twogamma/visualize  green
