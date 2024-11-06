@@ -15,15 +15,15 @@
 /gate/physics/Electron/SetCutInRegion   hole 0.5 mm
 /gate/physics/Positron/SetCutInRegion   hole 0.5 mm
 
-# Cuts for particle in linear source exterior
-/gate/physics/Gamma/SetCutInRegion      linearSourceOut 0.1 mm
-/gate/physics/Electron/SetCutInRegion   linearSourceOut 0.1 mm
-/gate/physics/Positron/SetCutInRegion   linearSourceOut 0.1 mm
-
 # Cuts for particle in linear source interior 
 /gate/physics/Gamma/SetCutInRegion      linearSourceIn 0.1 mm
 /gate/physics/Electron/SetCutInRegion   linearSourceIn 0.1 mm
 /gate/physics/Positron/SetCutInRegion   linearSourceIn 0.1 mm
+
+# Cuts for particle in linear source exterior
+/gate/physics/Gamma/SetCutInRegion      linearSourceOut 0.1 mm
+/gate/physics/Electron/SetCutInRegion   linearSourceOut 0.1 mm
+/gate/physics/Positron/SetCutInRegion   linearSourceOut 0.1 mm
 
 # Cuts for particle in LSO
 /gate/physics/Gamma/SetCutInRegion      LSO 0.1 mm
