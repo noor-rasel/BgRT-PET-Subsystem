@@ -19,7 +19,7 @@
 /gate/lines/geometry/setHeight   70.0 cm
 /gate/lines/setMaterial          Water
 /gate/lines/vis/forceWireframe
-/gate/lines/vis/setColor         yellow
+/gate/lines/vis/setColor         green
 /gate/lines/vis/setVisible       1
 
 # Define Polyethylene phantom
