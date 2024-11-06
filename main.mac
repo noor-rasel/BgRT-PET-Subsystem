@@ -13,7 +13,7 @@
 ##########################################################
 /control/execute mac/head.mac
 /control/execute mac/digitizer.mac
-/control/execute mac/necr_phantom.mac
+#/control/execute mac/necr_phantom.mac
 /control/execute mac/sensitivity_phantom.mac
 
 ##########################################################
@@ -34,7 +34,7 @@
 ##########################################################
 # Visualisation
 ##########################################################
-#/control/execute mac/visu.mac
+/control/execute mac/visu.mac
 
 ##########################################################
 # Source
