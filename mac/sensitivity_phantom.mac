@@ -1,4 +1,4 @@
-# Define NEMA NU2 2018 Sensitivity Phantom
+# Define NEMA_NU2 2018 Sensitivity Phantom
 /gate/world/daughters/name               phantom
 /gate/world/daughters/insert             cylinder
 /gate/phantom/placement/setTranslation   0.0 0.0 0.0 cm
