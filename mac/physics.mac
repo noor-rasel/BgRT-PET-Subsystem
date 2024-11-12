@@ -25,6 +25,7 @@
 #/gate/physics/Electron/SetCutInRegion   linearSourceOut 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   linearSourceOut 0.1 mm
 
+# Cut commands for sensitivity calculation
 # Cuts for particle in line source
 /gate/physics/Gamma/SetCutInRegion      lines 0.1 mm
 /gate/physics/Electron/SetCutInRegion   lines 0.1 mm
