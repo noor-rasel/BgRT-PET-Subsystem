@@ -36,7 +36,7 @@
 
 # Coincidence sorter
 
-# Prompt coincidence
+# Prompt/Total coincidences
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/setInputCollection Singles
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/setWindow          4.5 ns
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/setDepth 4
