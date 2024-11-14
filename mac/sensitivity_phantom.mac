@@ -3,7 +3,7 @@
 /gate/world/daughters/insert             cylinder
 /gate/phantom/placement/setTranslation   0.0 0.0 0.0 cm
 /gate/phantom/geometry/setRmin     0.0 cm
-/gate/phantom/geometry/setRmax     4.75 mm
+/gate/phantom/geometry/setRmax     6.35 mm
 /gate/phantom/geometry/setHeight   70.0 cm
 /gate/phantom/setMaterial          Air
 /gate/phantom/vis/forceWireframe
@@ -58,11 +58,23 @@
 /gate/layer2/vis/setColor         red
 /gate/layer2/vis/setVisible       1
 
+# Define Aluminum Sleeve 03
+/gate/phantom/daughters/name layer3
+/gate/phantom/daughters/insert cylinder
+/gate/layer3/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/layer3/geometry/setRmin 5.1 mm
+/gate/layer3/geometry/setRmax 6.35 mm
+/gate/layer3/geometry/setHeight   70.0 cm
+/gate/layer3/setMaterial          Aluminium
+/gate/layer3/vis/forceWireframe
+/gate/layer3/vis/setColor         green
+/gate/layer3/vis/setVisible       1
+
 # Define the sensitive detector
 /gate/phantom/attachPhantomSD
 /gate/lines/attachPhantomSD
 /gate/plastic/attachPhantomSD
 /gate/layer1/attachPhantomSD
 /gate/layer2/attachPhantomSD
-
+/gate/layer3/attachPhantomSD
 
