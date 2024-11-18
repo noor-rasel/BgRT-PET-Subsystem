@@ -5,6 +5,7 @@
 /gate/physics/Electron/SetCutInRegion   world 1.0 m
 /gate/physics/Positron/SetCutInRegion   world 1.0 m
 
+# Cuts for NECR Calculation
 # Cuts for particle in NEMACylinder
 #/gate/physics/Gamma/SetCutInRegion      phantom 0.1 mm
 #/gate/physics/Electron/SetCutInRegion   phantom 0.1 mm
