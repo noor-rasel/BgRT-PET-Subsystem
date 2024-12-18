@@ -13,3 +13,5 @@
 /gate/source/twogamma/gps/radius        1.0 mm
 /gate/source/twogamma/gps/halfz         350 mm
 /gate/source/twogamma/visualize  green
+
+/gate/source/list
