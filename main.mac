@@ -11,7 +11,7 @@
 ##########################################################
 # Geometry
 ##########################################################
-/control/execute mac/head.mac
+/control/execute mac/arc_head.mac
 /control/execute mac/digitizer.mac
 #/control/execute mac/necr_phantom.mac
 /control/execute mac/sensitivity_phantom.mac
