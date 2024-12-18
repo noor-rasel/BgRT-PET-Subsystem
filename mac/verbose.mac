@@ -20,4 +20,5 @@
 /gate/verbose Geometry  0
 /gate/verbose Core      0
 
+/gate/output/verbose 1
 
