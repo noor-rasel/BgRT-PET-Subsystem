@@ -94,6 +94,10 @@
 /gate/arc/ring/setPoint2 0. 0. 0. mm
 /gate/arc/ring/enableAutoRotation
 
+#/gate/PETscanner/moves/insert orbiting
+#/gate/PETscanner/orbiting/setSpeed 360 deg/s
+#/gate/PETscanner/orbiting/setPoint1 0 0 0 cm
+#/gate/PETscanner/orbiting/setPoint2 0 0 1 cm
 
 #     ATTACH SYSTEMS
 /gate/systems/PETscanner/level1/attach arc
