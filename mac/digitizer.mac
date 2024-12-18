@@ -36,7 +36,7 @@
 # Prompt/Total coincidences
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/setInputCollection Singles
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/setWindow          4.5 ns
-#/gate/digitizerMgr/CoincidenceSorter/Coincidences/setDepth 1
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setDepth 4
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/minSectorDifference 1
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/MultiplesPolicy    takeAllGoods
 
@@ -47,7 +47,7 @@
 /gate/digitizerMgr/CoincidenceSorter/delay/setInputCollection Singles
 /gate/digitizerMgr/CoincidenceSorter/delay/setWindow                 4.5 ns
 /gate/digitizerMgr/CoincidenceSorter/delay/setOffset                 80.0 ns
-#/gate/digitizerMgr/CoincidenceSorter/delay/setDepth 1
+/gate/digitizerMgr/CoincidenceSorter/delay/setDepth 4
 /gate/digitizerMgr/CoincidenceSorter/delay/minSectorDifference 1
 /gate/digitizerMgr/CoincidenceSorter/delay/MultiplesPolicy          takeAllGoods
 
