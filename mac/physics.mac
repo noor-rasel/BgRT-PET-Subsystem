@@ -1,9 +1,9 @@
-/gate/physics/addPhysicsList emstandard_opt3
+/gate/physics/addPhysicsList emstandard_opt4
 
-# High cut by default
-/gate/physics/Gamma/SetCutInRegion      world 1.0 m
-/gate/physics/Electron/SetCutInRegion   world 1.0 m
-/gate/physics/Positron/SetCutInRegion   world 1.0 m
+# High cuts by default
+/gate/physics/Gamma/SetCutInRegion      world 1 mm
+/gate/physics/Electron/SetCutInRegion   world 1 mm
+/gate/physics/Positron/SetCutInRegion   world 1 mm
 
 # Cuts for NECR Calculation
 # Cuts for particle in NEMACylinder
@@ -26,16 +26,14 @@
 #/gate/physics/Electron/SetCutInRegion   linearSourceOut 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   linearSourceOut 0.1 mm
 
+##########
 # Cut commands for sensitivity calculation
-# Cuts for particle in line source
-/gate/physics/Gamma/SetCutInRegion      lines 0.1 mm
-/gate/physics/Electron/SetCutInRegion   lines 0.1 mm
-/gate/physics/Positron/SetCutInRegion   lines 0.1 mm
+##########
 
-# Cuts for particle in polythylene phantom
-/gate/physics/Gamma/SetCutInRegion      plastic 0.1 mm
-/gate/physics/Electron/SetCutInRegion   plastic 0.1 mm
-/gate/physics/Positron/SetCutInRegion   plastic 0.1 mm
+# Cuts for particles in phantom
+/gate/physics/Gamma/SetCutInRegion      phantom 0.1 mm
+/gate/physics/Electron/SetCutInRegion   phantom 0.1 mm
+/gate/physics/Positron/SetCutInRegion   phantom 0.1 mm
 
 # Cuts for particle in aluminum sleeve 01
 /gate/physics/Gamma/SetCutInRegion      layer1 0.1 mm
