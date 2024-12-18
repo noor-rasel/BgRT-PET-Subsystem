@@ -1,0 +1,84 @@
+# Source for Spatial resolution calculation
+#/gate/source/addSource source1
+#/gate/source/source1/setActivity 0.3 MBq
+#/gate/source/source1/setForcedUnstableFlag true
+#/gate/source/source1/setForcedHalfLife 6586.0 s
+#/gate/source/source1/setType backtoback
+#/gate/source/source1/gps/particle gamma
+#/gate/source/source1/gps/energytype Mono
+#/gate/source/source1/gps/monoenergy 0.511 MeV
+#/gate/source/source1/gps/type Volume
+#/gate/source/source1/gps/shape         Sphere
+#/gate/source/source1/gps/centre        0.0 1.0 0.0 cm
+#/gate/source/source1/gps/radius        0.25 mm
+#/gate/source/source1/visualize  green
+
+#/gate/source/addSource source2
+#/gate/source/source2/setActivity 0.3 MBq
+#/gate/source/source2/setForcedUnstableFlag true
+#/gate/source/source2/setForcedHalfLife 6586.0 s
+#/gate/source/source2/setType backtoback
+#/gate/source/source2/gps/particle gamma
+#/gate/source/source2/gps/energytype Mono
+#/gate/source/source2/gps/monoenergy 0.511 MeV
+#/gate/source/source2/gps/type Volume
+#/gate/source/source2/gps/shape         Sphere
+#/gate/source/source2/gps/centre        0.0 10.0 0.0 cm
+#/gate/source/source2/gps/radius        0.25 mm
+#/gate/source/source2/visualize  green
+
+#/gate/source/addSource source3
+#/gate/source/source3/setActivity 0.3 MBq
+#/gate/source/source3/setForcedUnstableFlag true
+#/gate/source/source3/setForcedHalfLife 6586.0 s
+#/gate/source/source3/setType backtoback
+#/gate/source/source3/gps/particle gamma
+#/gate/source/source3/gps/energytype Mono
+#/gate/source/source3/gps/monoenergy 0.511 MeV
+#/gate/source/source3/gps/type Volume
+#/gate/source/source3/gps/shape         Sphere
+#/gate/source/source3/gps/centre        0.0 20.0 0.0 cm
+#/gate/source/source3/gps/radius        0.25 mm
+#/gate/source/source3/visualize  green
+
+#/gate/source/addSource source4
+#/gate/source/source4/setActivity 0.3 MBq
+#/gate/source/source4/setForcedUnstableFlag true
+#/gate/source/source4/setForcedHalfLife 6586.0 s
+#/gate/source/source4/setType backtoback
+#/gate/source/source4/gps/particle gamma
+#/gate/source/source4/gps/energytype Mono
+#/gate/source/source4/gps/monoenergy 0.511 MeV
+#/gate/source/source4/gps/type Volume
+#/gate/source/source4/gps/shape         Sphere
+#/gate/source/source4/gps/centre        0.0 -1.0 1.95 cm
+#/gate/source/source4/gps/radius        0.25 mm
+#/gate/source/source4/visualize  green
+
+#/gate/source/addSource source5
+#/gate/source/source5/setActivity 0.3 MBq
+#/gate/source/source5/setForcedUnstableFlag true
+#/gate/source/source5/setForcedHalfLife 6586.0 s
+#/gate/source/source5/setType backtoback
+#/gate/source/source5/gps/particle gamma
+#/gate/source/source5/gps/energytype Mono
+#/gate/source/source5/gps/monoenergy 0.511 MeV
+#/gate/source/source5/gps/type Volume
+#/gate/source/source5/gps/shape         Sphere
+#/gate/source/source5/gps/centre        0.0 -10.0 1.95 cm
+#/gate/source/source5/gps/radius        0.25 mm
+#/gate/source/source5/visualize  green
+
+#/gate/source/addSource source6
+#/gate/source/source6/setActivity 0.3 MBq
+#/gate/source/source6/setForcedUnstableFlag true
+#/gate/source/source6/setForcedHalfLife 6586.0 s
+#/gate/source/source6/setType backtoback
+#/gate/source/source6/gps/particle gamma
+#/gate/source/source6/gps/energytype Mono
+#/gate/source/source6/gps/monoenergy 0.511 MeV
+#/gate/source/source6/gps/type Volume
+#/gate/source/source6/gps/shape         Sphere
+#/gate/source/source6/gps/centre        0.0 -20.0 1.95 cm
+#/gate/source/source6/gps/radius        0.25 mm
+#/gate/source/source6/visualize  green
