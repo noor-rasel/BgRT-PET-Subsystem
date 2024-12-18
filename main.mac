@@ -39,7 +39,8 @@
 ##########################################################
 # Source
 ##########################################################
-/control/execute mac/source.mac
+/control/execute mac/sensitivity_source.mac
+#/control/execute mac/necr_source.mac
 
 # Random
 /gate/random/setEngineName MersenneTwister
@@ -49,6 +50,6 @@
 # Start acquisition
 /gate/application/setTimeStart 0 s
 /gate/application/setTimeSlice 1 s
-/gate/application/setTimeStop  10 s
+/gate/application/setTimeStop  30 s
 
 /gate/application/startDAQ
