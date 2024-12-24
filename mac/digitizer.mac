@@ -1,20 +1,23 @@
-########
-# Singles Digitizer Settings
-#######
+#############################################################
+######### Digitizer Settings for BgRT PET Machine ###########
+#############################################################
 
-# Adder_ provide integrated pulse by summing up hits that occur in same crystal
+#####Singles Digitizer Settings #######
+
+
+# Adder_ provides an integrated pulse by summing up hits that occur in the same crystal
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert                        adder
 
-# Readout_ regroup pulses per block of crystals, total energy of all pulses
+# Readout_ regroup pulses per block of crystals, provide total energy of all pulses
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert                        readout
-/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/readout/setDepth              4
+/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/readout/setDepth              2
 
 # Energy Resolution_ simulates a Gaussian energy blurring
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert                        energyResolution
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyResolution/fwhm        0.15
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyResolution/energyOfReference 511. keV
 
-# Time Resolution_ simulates Gaussian time blurring
+# Time/Temporal Resolution_ simulates Gaussian time blurring
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert timeResolution
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/timeResolution/fwhm 1000 ps
 
@@ -23,36 +26,34 @@
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyFraming/setMin      395. keV
 /gate/digitizerMgr/LSO/SinglesDigitizer/Singles/energyFraming/setMax            600. keV
 
-# DEADTIME_ needs to be optimized manually by testing with several values between about 250 ns and 350 ns
+# DEADTIME_ needs to be optimized manually by testing with several values between 250 ns and 350 ns
 #/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/insert deadtime
 #/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/deadtime/setDeadTime 300 ns
 #/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/deadtime/setMode nonparalysable
 #/gate/digitizerMgr/LSO/SinglesDigitizer/Singles/deadtime/chooseDTVolume module
 
-#########
-# Coincidence Sorter Digitizer Settings
-##########
+######## Coincidence Sorter Digitizer Settings ###########
 
 # Prompt/Total coincidences
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/setInputCollection Singles
-/gate/digitizerMgr/CoincidenceSorter/Coincidences/setWindow          4.5 ns
-/gate/digitizerMgr/CoincidenceSorter/Coincidences/setDepth 4
-/gate/digitizerMgr/CoincidenceSorter/Coincidences/minSectorDifference 1
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/setWindow          2.45 ns
+#/gate/digitizerMgr/CoincidenceSorter/Coincidences/setDepth 4
+#/gate/digitizerMgr/CoincidenceSorter/Coincidences/minSectorDifference 1
 /gate/digitizerMgr/CoincidenceSorter/Coincidences/MultiplesPolicy    takeAllGoods
+/gate/digitizerMgr/CoincidenceSorter/Coincidences/describe
 
 # Delayed coincidences
-
 /gate/digitizerMgr/name                            delay
 /gate/digitizerMgr/insert                          CoincidenceSorter
 /gate/digitizerMgr/CoincidenceSorter/delay/setInputCollection Singles
-/gate/digitizerMgr/CoincidenceSorter/delay/setWindow                 4.5 ns
+/gate/digitizerMgr/CoincidenceSorter/delay/setWindow                 2.45 ns
 /gate/digitizerMgr/CoincidenceSorter/delay/setOffset                 80.0 ns
-/gate/digitizerMgr/CoincidenceSorter/delay/setDepth 4
-/gate/digitizerMgr/CoincidenceSorter/delay/minSectorDifference 1
+#/gate/digitizerMgr/CoincidenceSorter/delay/setDepth 4
+#/gate/digitizerMgr/CoincidenceSorter/delay/minSectorDifference 1
 /gate/digitizerMgr/CoincidenceSorter/delay/MultiplesPolicy          takeAllGoods
+/gate/digitizerMgr/CoincidenceSorter/delay/describe
 
 # Final coincidence: Prompts plus Delays
-
 /gate/digitizerMgr/name finalCoinc
 /gate/digitizerMgr/insert CoincidenceDigitizer
 /gate/digitizerMgr/CoincidenceDigitizer/finalCoinc/addInputCollection delay
