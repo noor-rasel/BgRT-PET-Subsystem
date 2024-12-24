@@ -30,6 +30,12 @@
 /gate/arc/geometry/setDeltaPhi 90 deg
 /gate/arc/setMaterial Air
 /gate/arc/vis/setVisible 0
+# REPEAT PET ARC
+/gate/arc/repeaters/insert ring
+/gate/arc/ring/setRepeatNumber 2
+/gate/arc/ring/setPoint1 0. 0. 1. mm
+/gate/arc/ring/setPoint2 0. 0. 0. mm
+/gate/arc/ring/enableAutoRotation
 
 #       DETECTOR MODULE
 /gate/arc/daughters/name module
@@ -41,6 +47,14 @@
 /gate/module/setMaterial Air
 /gate/module/vis/setVisible 0
 
+# REPEAT DETECTOR MODULE
+/gate/module/repeaters/insert ring
+/gate/module/ring/setRepeatNumber 16
+/gate/module/ring/setPoint1 0. 0. 1. mm
+/gate/module/ring/setPoint2 0. 0. 0. mm
+/gate/module/ring/setFirstAngle -45 deg
+/gate/module/ring/setAngularSpan 90 deg
+/gate/module/ring/enableAutoRotation
 
 #       DETECTOR BLOCK
 /gate/module/daughters/name block
@@ -52,6 +66,10 @@
 /gate/block/setMaterial Air
 /gate/block/vis/setVisible 0
 
+# REPEAT DETECTOR BLOCK
+/gate/block/repeaters/insert          linear
+/gate/block/linear/setRepeatNumber    2
+/gate/block/linear/setRepeatVector    0.0 0.0 2.716 cm
 
 #       LSO CRYSTAL
 /gate/block/daughters/name LSO
@@ -63,36 +81,12 @@
 /gate/LSO/setMaterial LSO
 /gate/LSO/vis/setColor green
 
-#       REPEAT LSO CRYSTAL
+# REPEAT LSO CRYSTAL
 /gate/LSO/repeaters/insert cubicArray
 /gate/LSO/cubicArray/setRepeatNumberX 1
 /gate/LSO/cubicArray/setRepeatNumberY 12
 /gate/LSO/cubicArray/setRepeatNumberZ 6
 /gate/LSO/cubicArray/setRepeatVector 0.0 4.14 4.14 mm
-
-
-#       REPEAT DETECTOR BLOCK
-/gate/block/repeaters/insert          linear
-/gate/block/linear/setRepeatNumber    2
-/gate/block/linear/setRepeatVector    0.0 0.0 2.716 cm
-
-
-
-#       REPEAT DETECTOR MODULE
-/gate/module/repeaters/insert ring
-/gate/module/ring/setRepeatNumber 16
-/gate/module/ring/setPoint1 0. 0. 1. mm
-/gate/module/ring/setPoint2 0. 0. 0. mm
-/gate/module/ring/setFirstAngle -45 deg
-/gate/module/ring/setAngularSpan 90 deg
-/gate/module/ring/enableAutoRotation
-
-#       REPEAT PET ARC
-/gate/arc/repeaters/insert ring
-/gate/arc/ring/setRepeatNumber 2
-/gate/arc/ring/setPoint1 0. 0. 1. mm
-/gate/arc/ring/setPoint2 0. 0. 0. mm
-/gate/arc/ring/enableAutoRotation
 
 #/gate/PETscanner/moves/insert orbiting
 #/gate/PETscanner/orbiting/setSpeed 360 deg/s
@@ -105,6 +99,7 @@
 /gate/systems/PETscanner/level3/attach block
 /gate/systems/PETscanner/level4/attach LSO
 
-
 #       ATTACH CRYSTAL SD
 /gate/LSO/attachCrystalSD
+
+/gate/systems/PETscanner/describe
