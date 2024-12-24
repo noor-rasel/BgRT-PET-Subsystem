@@ -2,7 +2,7 @@
 
 /gate/actor/addActor               SimulationStatisticActor stat
 /gate/actor/stat/save              output1/stat.txt
-#/gate/actor/stat/saveEveryNSeconds 60
+/gate/actor/stat/saveEveryNSeconds 60
 
 
 # Define root list-mode file output
