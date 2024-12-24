@@ -8,7 +8,6 @@
 #/gate/source/twogamma/gps/particle gamma
 #/gate/source/twogamma/gps/energytype Mono
 #/gate/source/twogamma/gps/monoenergy 0.511 MeV
-
 #/gate/source/twogamma/gps/type Volume
 #/gate/source/twogamma/gps/shape         Cylinder
 #/gate/source/twogamma/gps/centre        0.0 0.0 0.0 mm
@@ -16,7 +15,6 @@
 #/gate/source/twogamma/gps/halfz         350 mm
 #/gate/source/twogamma/visualize  green
 
-#/gate/source/list
 
 /gate/source/addSource                 F18
 /gate/source/F18/setActivity           4.0 MBq
@@ -24,7 +22,6 @@
 /gate/source/F18/setForcedHalfLife     6586.2 s
 /gate/source/F18/gps/particle          e+
 /gate/source/F18/gps/energytype        Fluor18
-
 /gate/source/F18/gps/type              Volume
 /gate/source/F18/gps/shape             Cylinder
 /gate/source/F18/gps/radius            1.0 mm
@@ -33,4 +30,5 @@
 /gate/source/F18/gps/centre            0.0 0.0 0.0 mm
 /gate/source/F18/visualize             green
 
+/gate/source/F18/dump 1
 /gate/source/list
