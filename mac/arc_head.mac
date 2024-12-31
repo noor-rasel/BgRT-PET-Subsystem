@@ -1,15 +1,15 @@
-# World
-/gate/world/geometry/setXLength 300.0 cm
-/gate/world/geometry/setYLength 300.0 cm
-/gate/world/geometry/setZLength 300.0 cm
-/gate/world/vis/setColor white
-/gate/world/vis/forceWireframe
+#####################
+##### World #########
+#####################
+/gate/world/geometry/setXLength 200.0 cm
+/gate/world/geometry/setYLength 200.0 cm
+/gate/world/geometry/setZLength 200.0 cm
 /gate/world/setMaterial Air
 /gate/world/vis/setVisible 0
 
-####################
-####  BgRT PET ARCS Using System PETScanner
-#######################
+############################
+#### System PETScanner #####
+############################
 /gate/world/daughters/name PETscanner
 /gate/world/daughters/insert cylinder
 /gate/PETscanner/placement/setTranslation 0.0 0.0 0.0 cm
@@ -30,6 +30,7 @@
 /gate/arc/geometry/setDeltaPhi 90 deg
 /gate/arc/setMaterial Air
 /gate/arc/vis/setVisible 0
+
 # REPEAT PET ARC
 /gate/arc/repeaters/insert ring
 /gate/arc/ring/setRepeatNumber 2
@@ -88,6 +89,7 @@
 /gate/LSO/cubicArray/setRepeatNumberZ 6
 /gate/LSO/cubicArray/setRepeatVector 0.0 4.14 4.14 mm
 
+# Motion of BgRT PET Subsystem
 #/gate/PETscanner/moves/insert orbiting
 #/gate/PETscanner/orbiting/setSpeed 360 deg/s
 #/gate/PETscanner/orbiting/setPoint1 0 0 0 cm
