@@ -2,7 +2,7 @@
 
 /gate/actor/addActor               SimulationStatisticActor stat
 /gate/actor/stat/save              output1/stat.txt
-/gate/actor/stat/saveEveryNSeconds 60
+#/gate/actor/stat/saveEveryNSeconds 60
 
 
 # Define root list-mode file output
@@ -17,11 +17,11 @@
 
 # Summary
 
-#/gate/output/summary/enable
-#/gate/output/summary/setFileName output1/summary.txt
-#/gate/output/summary/addCollection Singles
-#/gate/output/summary/addCollection Coincidences
-#/gate/output/summary/addCollection Delay
+/gate/output/summary/enable
+/gate/output/summary/setFileName output1/summary.txt
+/gate/output/summary/addCollection Singles
+/gate/output/summary/addCollection Coincidences
+/gate/output/summary/addCollection Delay
 
 
 
