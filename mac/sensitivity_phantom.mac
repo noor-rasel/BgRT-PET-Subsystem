@@ -59,16 +59,16 @@
 /gate/layer3/vis/setVisible       1
 
 # Define Aluminum Sleeve 04
-#/gate/world/daughters/name layer4
-#/gate/world/daughters/insert cylinder
-#/gate/layer4/placement/setTranslation 0.0 0.0 0.0 mm
-#/gate/layer4/geometry/setRmin 6.7 mm
-#/gate/layer4/geometry/setRmax 7.95 mm
-#/gate/layer4/geometry/setHeight   700 mm
-#/gate/layer4/setMaterial          Aluminium
-#/gate/layer4/vis/forceWireframe
-#/gate/layer4/vis/setColor         red
-#/gate/layer4/vis/setVisible       1
+/gate/world/daughters/name layer4
+/gate/world/daughters/insert cylinder
+/gate/layer4/placement/setTranslation 0.0 0.0 0.0 mm
+/gate/layer4/geometry/setRmin 6.7 mm
+/gate/layer4/geometry/setRmax 7.95 mm
+/gate/layer4/geometry/setHeight   700 mm
+/gate/layer4/setMaterial          Aluminium
+/gate/layer4/vis/forceWireframe
+/gate/layer4/vis/setColor         red
+/gate/layer4/vis/setVisible       1
 
 # Define Aluminum Sleeve 05
 #/gate/world/daughters/name layer5
@@ -88,5 +88,5 @@
 /gate/layer1/attachPhantomSD
 /gate/layer2/attachPhantomSD
 /gate/layer3/attachPhantomSD
-#/gate/layer4/attachPhantomSD
+/gate/layer4/attachPhantomSD
 #/gate/layer5/attachPhantomSD
