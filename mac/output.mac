@@ -19,7 +19,7 @@
 
 /gate/output/summary/enable
 /gate/output/summary/setFileName output/summary.txt
-/gate/output/summary/addCollection Singles
+#/gate/output/summary/addCollection Singles
 /gate/output/summary/addCollection Coincidences
 /gate/output/summary/addCollection Delay
 
