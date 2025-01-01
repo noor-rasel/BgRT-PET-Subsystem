@@ -71,16 +71,16 @@
 /gate/layer4/vis/setVisible       1
 
 # Define Aluminum Sleeve 05
-#/gate/world/daughters/name layer5
-#/gate/world/daughters/insert cylinder
-#/gate/layer5/placement/setTranslation 0.0 0.0 0.0 mm
-#/gate/layer5/geometry/setRmin 8.3 mm
-#/gate/layer5/geometry/setRmax 9.55 mm
-#/gate/layer5/geometry/setHeight   700 mm
-#/gate/layer5/setMaterial          Aluminium
-#/gate/layer5/vis/forceWireframe
-#/gate/layer5/vis/setColor         green
-#/gate/layer5/vis/setVisible       1
+/gate/world/daughters/name layer5
+/gate/world/daughters/insert cylinder
+/gate/layer5/placement/setTranslation 0.0 0.0 0.0 mm
+/gate/layer5/geometry/setRmin 8.3 mm
+/gate/layer5/geometry/setRmax 9.55 mm
+/gate/layer5/geometry/setHeight   700 mm
+/gate/layer5/setMaterial          Aluminium
+/gate/layer5/vis/forceWireframe
+/gate/layer5/vis/setColor         green
+/gate/layer5/vis/setVisible       1
 
 # Define the sensitive detector
 /gate/phantom/attachPhantomSD
@@ -89,4 +89,4 @@
 /gate/layer2/attachPhantomSD
 /gate/layer3/attachPhantomSD
 /gate/layer4/attachPhantomSD
-#/gate/layer5/attachPhantomSD
+/gate/layer5/attachPhantomSD
