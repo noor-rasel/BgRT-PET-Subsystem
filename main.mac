@@ -47,8 +47,8 @@
 
 # Start acquisition
 /gate/application/setTimeStart 0 s
-/gate/application/setTimeSlice 10 s
-/gate/application/setTimeStop  120 s
+/gate/application/setTimeSlice 18 s
+/gate/application/setTimeStop  180 s
 
 /gate/application/startDAQ
 
