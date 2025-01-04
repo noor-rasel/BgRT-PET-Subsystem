@@ -2,7 +2,7 @@
 /gate/source/addSource                 F18
 /gate/source/F18/gps/particle          e+
 /gate/source/F18/gps/energytype        Fluor18
-/gate/source/F18/setActivity           {activity}. MBq
+/gate/source/F18/setActivity           {activity} MBq
 /gate/source/F18/setForcedUnstableFlag true
 /gate/source/F18/setForcedHalfLife     6586.0 s
 /gate/source/F18/gps/type Volume
@@ -16,7 +16,7 @@
 
 # Direct back to back gamma emission
 #/gate/source/addSource twogamma
-#/gate/source/twogamma/setActivity {activity}. MBq
+#/gate/source/twogamma/setActivity {activity} MBq
 #/gate/source/twogamma/setForcedUnstableFlag true
 #/gate/source/twogamma/setForcedHalfLife 6586.0 s
 #/gate/source/twogamma/setType backtoback
