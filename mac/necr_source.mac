@@ -1,32 +1,33 @@
-
 # Fluor 18 positron emission source
-#/gate/source/addSource                 f18
-#/gate/source/f18/gps/particle          e+
-#/gate/source/f18/gps/energytype        Fluor18
-#/gate/source/f18/setActivity           1787.914158 MBq
-#/gate/source/f18/setForcedUnstableFlag true
-#/gate/source/f18/setForcedHalfLife     6586.0 s
-#/gate/source/f18/gps/shape             Cylinder
-#/gate/source/f18/gps/radius    1.6 mm
-#/gate/source/f18/gps/halfz             35 mm
-#/gate/source/f18/gps/centre    0.0 -4.5 0.0 cm
-# /gate/source/f18/visualize            green
+/gate/source/addSource                 F18
+/gate/source/F18/gps/particle          e+
+/gate/source/F18/gps/energytype        Fluor18
+/gate/source/F18/setActivity           1787.914158 MBq
+/gate/source/F18/setForcedUnstableFlag true
+/gate/source/F18/setForcedHalfLife     6586.0 s
+/gate/source/F18/gps/type Volume
+/gate/source/F18/gps/shape             Cylinder
+/gate/source/F18/gps/radius    1.6 mm
+/gate/source/F18/gps/halfz             35 mm
+/gate/source/F18/gps/centre    0.0 -4.5 0.0 cm
+/gate/source/F18/visualize            green
+/gate/source/F18/angtype iso
 
 # Direct back to back gamma emission
-/gate/source/addSource twogamma
-/gate/source/twogamma/setActivity 440.0 MBq
-/gate/source/twogamma/setForcedUnstableFlag true
-/gate/source/twogamma/setForcedHalfLife 6586.0 s
-/gate/source/twogamma/setType backtoback
-/gate/source/twogamma/gps/particle gamma
-/gate/source/twogamma/gps/energytype Mono
-/gate/source/twogamma/gps/monoenergy 0.511 MeV
-/gate/source/twogamma/gps/type Volume
-/gate/source/twogamma/gps/shape         Cylinder
-/gate/source/twogamma/gps/centre        0.0 -4.5 0.0 cm
-/gate/source/twogamma/gps/radius        1.6 mm
-/gate/source/twogamma/gps/halfz         35 cm
-/gate/source/twogamma/visualize  green
+#/gate/source/addSource twogamma
+#/gate/source/twogamma/setActivity 440.0 MBq
+#/gate/source/twogamma/setForcedUnstableFlag true
+#/gate/source/twogamma/setForcedHalfLife 6586.0 s
+#/gate/source/twogamma/setType backtoback
+#/gate/source/twogamma/gps/particle gamma
+#/gate/source/twogamma/gps/energytype Mono
+#/gate/source/twogamma/gps/monoenergy 0.511 MeV
+#/gate/source/twogamma/gps/type Volume
+#/gate/source/twogamma/gps/shape         Cylinder
+#/gate/source/twogamma/gps/centre        0.0 -4.5 0.0 cm
+#/gate/source/twogamma/gps/radius        1.6 mm
+#/gate/source/twogamma/gps/halfz         35 cm
+#/gate/source/twogamma/visualize  green
 
 # source activities are (MBq): 44, 88, 110
 # 154, 198, 220, 264, 308, 330, 352, 374, 396, 440
