@@ -47,6 +47,21 @@
 #/gate/physics/Electron/SetCutInRegion   layer2 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   layer2 0.1 mm
 
+# Cuts for particle in aluminum sleeve 03
+#/gate/physics/Gamma/SetCutInRegion      layer3 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   layer3 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   layer3 0.1 mm
+
+# Cuts for particle in aluminum sleeve 04
+#/gate/physics/Gamma/SetCutInRegion      layer4 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   layer4 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   layer4 0.1 mm
+
+# Cuts for particle in aluminum sleeve 05
+#/gate/physics/Gamma/SetCutInRegion      layer5 0.1 mm
+#/gate/physics/Electron/SetCutInRegion   layer5 0.1 mm
+#/gate/physics/Positron/SetCutInRegion   layer5 0.1 mm
+
 # Cuts for particle in LSO
 /gate/physics/Gamma/SetCutInRegion      LSO 0.1 mm
 /gate/physics/Electron/SetCutInRegion   LSO 0.1 mm
