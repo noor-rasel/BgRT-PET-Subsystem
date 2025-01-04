@@ -1,14 +1,14 @@
 # Global Stat
 
 /gate/actor/addActor               SimulationStatisticActor stat
-/gate/actor/stat/save              output/stat.txt
-#/gate/actor/stat/saveEveryNSeconds 60
+/gate/actor/stat/save              output/stat_{activity}_MBq.txt
+/gate/actor/stat/saveEveryNSeconds 60
 
 
 # Define root list-mode file output
 
 /gate/output/root/enable
-/gate/output/root/setFileName             output/pet
+/gate/output/root/setFileName             output/pet_{activity}_MBq
 /gate/output/root/setRootHitFlag          0
 /gate/output/root/setRootSinglesFlag      1
 /gate/output/root/setRootCoincidencesFlag 1
@@ -18,7 +18,7 @@
 # Summary
 
 /gate/output/summary/enable
-/gate/output/summary/setFileName output/summary.txt
+/gate/output/summary/setFileName output/summary_{activity}_MBq.txt
 /gate/output/summary/addCollection Singles
 /gate/output/summary/addCollection Coincidences
 /gate/output/summary/addCollection Delay
