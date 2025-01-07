@@ -11,7 +11,6 @@
 /gate/source/F18/gps/halfz     70 cm
 /gate/source/F18/gps/centre    0.0 -4.5 0.0 cm
 /gate/source/F18/visualize            green
-/gate/source/F18/angtype iso
 
 
 # Direct back to back gamma emission
