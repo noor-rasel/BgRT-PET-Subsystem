@@ -8,25 +8,25 @@
 ###########
 # Cuts commands for NECR Calculation
 ###########
-# Cuts for particle in NEMACylinder
+# Cuts for particles in NEMACylinder
 /gate/physics/Gamma/SetCutInRegion      phantom 0.1 mm
 /gate/physics/Electron/SetCutInRegion   phantom 0.1 mm
 /gate/physics/Positron/SetCutInRegion   phantom 0.1 mm
 
-# Cuts for particle in hole region
+# Cuts for particles in hole region
 /gate/physics/Gamma/SetCutInRegion      hole 0.1 mm
 /gate/physics/Electron/SetCutInRegion   hole 0.1 mm
 /gate/physics/Positron/SetCutInRegion   hole 0.1 mm
 
-# Cuts for particle in linear source interior 
-/gate/physics/Gamma/SetCutInRegion      linearSourceIn 0.1 mm
-/gate/physics/Electron/SetCutInRegion   linearSourceIn 0.1 mm
-/gate/physics/Positron/SetCutInRegion   linearSourceIn 0.1 mm
-
-# Cuts for particle in linear source exterior
+# Cuts for particles in linear source exterior
 /gate/physics/Gamma/SetCutInRegion      linearSourceOut 0.1 mm
 /gate/physics/Electron/SetCutInRegion   linearSourceOut 0.1 mm
 /gate/physics/Positron/SetCutInRegion   linearSourceOut 0.1 mm
+
+# Cuts for particles in linear source interior 
+/gate/physics/Gamma/SetCutInRegion      linearSourceIn 0.1 mm
+/gate/physics/Electron/SetCutInRegion   linearSourceIn 0.1 mm
+/gate/physics/Positron/SetCutInRegion   linearSourceIn 0.1 mm
 
 ##########
 # Cut commands for sensitivity calculation
@@ -37,32 +37,32 @@
 #/gate/physics/Electron/SetCutInRegion   phantom 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   phantom 0.1 mm
 
-# Cuts for particle in aluminum sleeve 01
+# Cuts for particles in aluminum sleeve 01
 #/gate/physics/Gamma/SetCutInRegion      layer1 0.1 mm
 #/gate/physics/Electron/SetCutInRegion   layer1 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   layer1 0.1 mm
 
-# Cuts for particle in aluminum sleeve 02
+# Cuts for particles in aluminum sleeve 02
 #/gate/physics/Gamma/SetCutInRegion      layer2 0.1 mm
 #/gate/physics/Electron/SetCutInRegion   layer2 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   layer2 0.1 mm
 
-# Cuts for particle in aluminum sleeve 03
+# Cuts for particles in aluminum sleeve 03
 #/gate/physics/Gamma/SetCutInRegion      layer3 0.1 mm
 #/gate/physics/Electron/SetCutInRegion   layer3 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   layer3 0.1 mm
 
-# Cuts for particle in aluminum sleeve 04
+# Cuts for particles in aluminum sleeve 04
 #/gate/physics/Gamma/SetCutInRegion      layer4 0.1 mm
 #/gate/physics/Electron/SetCutInRegion   layer4 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   layer4 0.1 mm
 
-# Cuts for particle in aluminum sleeve 05
+# Cuts for particles in aluminum sleeve 05
 #/gate/physics/Gamma/SetCutInRegion      layer5 0.1 mm
 #/gate/physics/Electron/SetCutInRegion   layer5 0.1 mm
 #/gate/physics/Positron/SetCutInRegion   layer5 0.1 mm
 
-# Cuts for particle in LSO
+# Cuts for particles in LSO
 /gate/physics/Gamma/SetCutInRegion      LSO 0.1 mm
 /gate/physics/Electron/SetCutInRegion   LSO 0.1 mm
 /gate/physics/Positron/SetCutInRegion   LSO 0.1 mm
